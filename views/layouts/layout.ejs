@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/81478abc59.js" crossorigin="anonymous"></script>
+
+    <link href = "/images/logo-small.jpg" rel="icon" type="image/gif">
+
+    <!-- carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/> 
+
+    <title><%= title %> </title>
+</head>
+<body>
+    <nav id="navbar" class="nav-transparent">
+
+        <a href="/" class="nav-image">
+            <img src="/images/logo-big.png" alt="">
+        </a>
+        
+        <ul class="nav-links ">
+            <li><a href="/estilos/paisajes">Paisajes</a></li>
+            <li><a href="/estilos/comida">Comida</a></li>
+            <li><a href="/estilos/retratos">Retratos</a></li>
+            <li><a href="/estilos/urbano">Urbano</a></li>
+            <li><a href="/proyectos">Proyectos</a></li>
+            <li><a href="/sobre-mi">Sobre mí</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+
+        <a id="closeNav" href="javascript:void(0);" class="responsive-none" onclick="moveResponsiveNav()">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+    </nav>
+
+    <%- body %> 
+
+    <footer>
+        <h3 class="white">© OMAR LOPEZ  2002 -  2021</h3> 
+        <div>
+            <a href="https://www.facebook.com/omaralexander.lopezvilchez" target="_blank" class="white icon-link"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://www.instagram.com/omaralexanderlopezvilchez/" target="_blank" class="white icon-link"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="/contacto" class="white icon-link"><i class="far fa-envelope fa-2x"></i></a>
+        </div>
+    </footer>
+    
+    <script src="/javascript/hideNav.js"></script>
+</body>
+</html>
